@@ -15,6 +15,11 @@ IN: twitter-ipsum.tests
 [ { 1 2 3 4 5 } triples ]
 unit-test
 
+! encode-url-parameters
+[ "foo=bar&baz=asdf" ]
+[ { { "foo" "bar" } { "baz" "asdf" } } ]
+unit-test
+
 ! generate-markov-chains
 [ t ]
 [
