@@ -12,7 +12,7 @@ IN: twitter-ipsum
 
 ERROR: sequence-too-short seq minimum-size ;
 :: triples ( seq -- seq-of-triples )
-    seq length 3 < [ seq 3 sequence-too-short throw ] when
+    seq length 3 < [ seq 3 sequence-too-short ] when
 
     0 seq length 3 - 1 <range>
     [| i |
